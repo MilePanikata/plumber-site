@@ -13,6 +13,7 @@ export default function Contact() {
     <div className="min-h-screen">
       <Header />
       
+      {/* Hero Section */}
       <section className="relative h-80 overflow-hidden">
         <div className="absolute inset-0">
           <img src={heroImg} alt="Contact Us" className="w-full h-full object-cover" />
@@ -25,7 +26,8 @@ export default function Contact() {
 
       <section className="py-16 bg-background">
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          {/* Info Cards */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             <Card className="p-8 text-center hover-elevate">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Mail className="w-8 h-8 text-primary" />
@@ -63,10 +65,11 @@ export default function Contact() {
             </Card>
           </div>
 
+          {/* Contact Form Section */}
           <div className="grid lg:grid-cols-2 gap-12 mb-16">
             <div>
               <div className="inline-block bg-muted px-4 py-2 rounded-full mb-4">
-                <span className="text-sm font-semibold text-foreground uppercase tracking-wider">Contact Us</span>
+                <span className="text-xs font-semibold text-foreground uppercase tracking-wider">Contact Us</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 font-[Poppins]">
                 Happy to Answer All Your Questions
@@ -77,33 +80,34 @@ export default function Contact() {
             </div>
 
             <Card className="p-8 bg-muted/30">
-              <h3 className="text-xl font-bold text-foreground mb-6 font-[Poppins]">Send a message to staff</h3>
+              <h3 className="text-xl font-bold text-foreground mb-2 font-[Poppins]">Send a message to staff</h3>
               <p className="text-sm text-muted-foreground mb-6">
                 Your email address will not be published. Required fields are marked *
               </p>
               <form className="space-y-4">
-                <div className="grid md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-2 gap-4">
                   <Input placeholder="First Name *" data-testid="input-first-name" />
                   <Input placeholder="Last Name *" data-testid="input-last-name" />
                 </div>
                 <Input type="email" placeholder="Email *" data-testid="input-email" />
                 <Input placeholder="Subject" data-testid="input-subject" />
-                <Textarea placeholder="Your Message *" rows={5} data-testid="textarea-message" />
+                <Textarea placeholder="Your Message *" rows={4} data-testid="textarea-message" />
                 <div className="flex items-start gap-2">
                   <input type="checkbox" id="save-info" className="mt-1" data-testid="checkbox-save-info" />
                   <label htmlFor="save-info" className="text-sm text-muted-foreground">
                     Save my name, email, and website in this browser for the next time I comment.
                   </label>
                 </div>
-                <Button className="w-full bg-orange hover-elevate active-elevate-2 text-white font-medium" data-testid="button-submit">
+                <Button className="w-full bg-orange hover-elevate active-elevate-2 text-white font-medium rounded-full" data-testid="button-submit">
                   Submit
                 </Button>
               </form>
             </Card>
           </div>
 
+          {/* Map Section */}
           <div className="mb-16">
-            <div className="w-full h-96 bg-muted rounded-lg overflow-hidden">
+            <div className="w-full h-[500px] bg-muted rounded-lg overflow-hidden">
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52901.38154186229!2d-149.9036289!3d61.2180556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x56c8917604b33f41%3A0x257dba5aa78868e3!2sAnchorage%2C%20AK%2C%20USA!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s"
                 width="100%"
@@ -117,6 +121,7 @@ export default function Contact() {
             </div>
           </div>
 
+          {/* Client Logos */}
           <ClientLogos />
         </div>
       </section>
