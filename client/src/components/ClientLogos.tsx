@@ -1,33 +1,27 @@
-import { Wrench, Droplets, Droplet, Hammer, Home, Shield, Zap, Waves } from "lucide-react";
-
 export default function ClientLogos() {
   const logos = [
-    { name: "KOHLER", icon: Droplets },
-    { name: "AMERICAN STANDARD", icon: Shield },
-    { name: "MOEN", icon: Droplet },
-    { name: "DELTA FAUCET", icon: Waves },
-    { name: "PFISTER", icon: Wrench },
-    { name: "GROHE", icon: Droplets },
-    { name: "RHEEM", icon: Zap },
-    { name: "FERGUSON", icon: Home },
+    { name: "KOHLER", style: "font-[serif] font-bold tracking-tight" },
+    { name: "AMERICAN STANDARD", style: "font-bold tracking-wide" },
+    { name: "MOEN", style: "font-bold tracking-wider" },
+    { name: "DELTA", style: "font-bold tracking-wide" },
+    { name: "PFISTER", style: "font-[serif] font-semibold tracking-normal" },
+    { name: "GROHE", style: "font-bold tracking-widest" },
+    { name: "RHEEM", style: "font-bold tracking-wide" },
+    { name: "FERGUSON", style: "font-bold tracking-wider" },
   ];
 
   return (
     <section className="py-12 bg-muted/30 border-y border-border">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
         <div className="relative overflow-hidden">
-          <div className="flex gap-16 animate-marquee">
-            {[...logos, ...logos].map((logo, index) => {
-              const Icon = logo.icon;
-              return (
-                <div key={index} className="flex-shrink-0 flex items-center justify-center gap-3 h-12 min-w-[180px]">
-                  <Icon className="w-6 h-6 text-muted-foreground/40" />
-                  <span className="text-muted-foreground/50 font-bold text-base uppercase tracking-wider whitespace-nowrap">
-                    {logo.name}
-                  </span>
-                </div>
-              );
-            })}
+          <div className="flex gap-16 animate-marquee items-center">
+            {[...logos, ...logos].map((logo, index) => (
+              <div key={index} className="flex-shrink-0 flex items-center justify-center h-16 min-w-[160px]">
+                <span className={`text-muted-foreground/40 text-xl uppercase ${logo.style} whitespace-nowrap`}>
+                  {logo.name}
+                </span>
+              </div>
+            ))}
           </div>
         </div>
       </div>
