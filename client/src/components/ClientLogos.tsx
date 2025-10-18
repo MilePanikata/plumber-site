@@ -20,16 +20,16 @@ export default function ClientLogos() {
   ];
 
   return (
-    <section className="py-12 bg-muted/30 border-y border-border">
+    <section className="py-16 bg-gradient-to-b from-muted/50 to-muted/30 border-y border-border">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
         <div className="relative overflow-hidden">
-          <div className="flex gap-16 animate-marquee items-center">
-            {[...logos, ...logos].map((logo, index) => (
-              <div key={index} className="flex-shrink-0 flex items-center justify-center h-16 min-w-[180px]">
+          <div className="flex gap-20 animate-marquee items-center">
+            {[...logos, ...logos, ...logos].map((logo, index) => (
+              <div key={index} className="flex-shrink-0 flex items-center justify-center h-20 min-w-[200px] bg-white rounded-lg px-6 py-3 shadow-sm">
                 <img 
                   src={logo.image} 
                   alt={logo.name} 
-                  className="h-12 w-auto object-contain opacity-40 grayscale hover:opacity-60 hover:grayscale-0 transition-all duration-300"
+                  className="h-14 w-auto object-contain"
                 />
               </div>
             ))}
@@ -39,10 +39,10 @@ export default function ClientLogos() {
       <style>{`
         @keyframes marquee {
           0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
+          100% { transform: translateX(-33.333%); }
         }
         .animate-marquee {
-          animation: marquee 40s linear infinite;
+          animation: marquee 25s linear infinite;
           width: fit-content;
         }
       `}</style>
