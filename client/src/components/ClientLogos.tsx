@@ -1,11 +1,11 @@
-import kohlerLogo from "@assets/stock_images/kohler_plumbing_logo_04512f98.jpg";
-import deltaLogo from "@assets/stock_images/delta_faucet_plumbin_04eed6e4.jpg";
-import groheLogo from "@assets/stock_images/grohe_plumbing_logo__5b7dbcd7.jpg";
-import rheemLogo from "@assets/stock_images/rheem_water_heater_l_7b203471.jpg";
-import fergusonLogo from "@assets/stock_images/ferguson_plumbing_su_48912dd1.jpg";
-import moenLogo from "@assets/stock_images/moen_plumbing_faucet_ad574ab2.jpg";
-import americanStandardLogo from "@assets/stock_images/american_standard_pl_142fe225.jpg";
-import pfisterLogo from "@assets/stock_images/pfister_plumbing_fau_3807ea2a.jpg";
+import kohlerLogo from "@assets/generated_images/Kohler_logo_clean_design_d6d11dbf.png";
+import deltaLogo from "@assets/generated_images/Delta_logo_clean_design_67e1cd2f.png";
+import groheLogo from "@assets/generated_images/Grohe_logo_clean_design_c1e5176e.png";
+import rheemLogo from "@assets/generated_images/Rheem_logo_clean_design_07f81d3f.png";
+import fergusonLogo from "@assets/generated_images/Ferguson_logo_clean_design_760de0bb.png";
+import moenLogo from "@assets/image_1760819790922.png";
+import americanStandardLogo from "@assets/Screenshot 2025-10-18 at 10.37.46 PM_1760819870582.png";
+import pfisterLogo from "@assets/image_1760819823522.png";
 
 export default function ClientLogos() {
   const logos = [
