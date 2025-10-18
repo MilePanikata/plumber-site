@@ -21,7 +21,7 @@ export default function Header() {
 
           <nav className="hidden md:flex items-center gap-8">
             <a href="/" className="text-sm font-medium text-foreground hover:text-primary transition-colors" data-testid="link-home">HOME</a>
-            <a href="#" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors" data-testid="link-pages">PAGES</a>
+            <a href="/about-us" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors" data-testid="link-about">ABOUT</a>
             <a href="/services" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors" data-testid="link-services">SERVICES</a>
             <a href="#" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors" data-testid="link-blog">BLOG</a>
             <a href="/contact" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors" data-testid="link-contact">CONTACT</a>
@@ -50,7 +50,7 @@ export default function Header() {
           <nav className="md:hidden py-4 border-t border-border" data-testid="nav-mobile-menu">
             <div className="flex flex-col gap-4">
               <a href="/" className="text-sm font-medium text-foreground">HOME</a>
-              <a href="#" className="text-sm font-medium text-muted-foreground">PAGES</a>
+              <a href="/about-us" className="text-sm font-medium text-muted-foreground">ABOUT</a>
               <a href="/services" className="text-sm font-medium text-muted-foreground">SERVICES</a>
               <a href="#" className="text-sm font-medium text-muted-foreground">BLOG</a>
               <a href="/contact" className="text-sm font-medium text-muted-foreground">CONTACT</a>

@@ -6,16 +6,20 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import heroImg from "@assets/generated_images/Handyman_professional_portrait_smiling_43d6764e.png";
 
 export default function Contact() {
   return (
     <div className="min-h-screen">
       <Header />
       
-      <section className="relative h-80 bg-muted/30 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-navy/80 to-transparent z-10"></div>
-        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 h-full flex items-center relative z-20">
-          <h1 className="text-4xl md:text-5xl font-bold text-navy font-[Poppins]">Contact Us</h1>
+      <section className="relative h-80 overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={heroImg} alt="Contact Us" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/60 to-transparent"></div>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 h-full flex items-center relative z-10">
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground font-[Poppins]">Contact Us</h1>
         </div>
       </section>
 
@@ -72,7 +76,7 @@ export default function Contact() {
               </p>
             </div>
 
-            <Card className="p-8">
+            <Card className="p-8 bg-muted/30">
               <h3 className="text-xl font-bold text-foreground mb-6 font-[Poppins]">Send a message to staff</h3>
               <p className="text-sm text-muted-foreground mb-6">
                 Your email address will not be published. Required fields are marked *
@@ -96,6 +100,21 @@ export default function Contact() {
                 </Button>
               </form>
             </Card>
+          </div>
+
+          <div className="mb-16">
+            <div className="w-full h-96 bg-muted rounded-lg overflow-hidden">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52901.38154186229!2d-149.9036289!3d61.2180556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x56c8917604b33f41%3A0x257dba5aa78868e3!2sAnchorage%2C%20AK%2C%20USA!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Our Location"
+              ></iframe>
+            </div>
           </div>
 
           <ClientLogos />
