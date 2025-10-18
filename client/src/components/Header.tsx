@@ -32,7 +32,7 @@ export default function Header() {
               <Phone className="w-4 h-4" />
               <span className="text-sm font-medium">+ 1(212) 255-511</span>
             </a>
-            <Button className="bg-orange hover-elevate active-elevate-2 text-white font-medium rounded-full" data-testid="button-get-quote">
+            <Button className="bg-primary hover-elevate active-elevate-2 text-white font-medium rounded-full" data-testid="button-get-quote">
               GET A QUOTE
             </Button>
           </div>
@@ -58,7 +58,7 @@ export default function Header() {
                 <Phone className="w-4 h-4" />
                 <span className="text-sm font-medium">+ 1(212) 255-511</span>
               </a>
-              <Button className="bg-orange hover-elevate active-elevate-2 text-white font-medium rounded-full w-full">
+              <Button className="bg-primary hover-elevate active-elevate-2 text-white font-medium rounded-full w-full">
                 GET A QUOTE
               </Button>
             </div>
