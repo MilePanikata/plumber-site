@@ -3,9 +3,9 @@ import deltaLogo from "@assets/generated_images/Delta_logo_clean_design_67e1cd2f
 import groheLogo from "@assets/generated_images/Grohe_logo_clean_design_c1e5176e.png";
 import rheemLogo from "@assets/generated_images/Rheem_logo_clean_design_07f81d3f.png";
 import fergusonLogo from "@assets/generated_images/Ferguson_logo_clean_design_760de0bb.png";
-import moenLogo from "@assets/image_1760819790922.png";
-import americanStandardLogo from "@assets/Screenshot 2025-10-18 at 10.37.46 PM_1760819870582.png";
-import pfisterLogo from "@assets/image_1760819823522.png";
+import moenLogo from "@assets/generated_images/Moen_professional_logo_07605519.png";
+import americanStandardLogo from "@assets/generated_images/American_Standard_logo_32f3eef7.png";
+import pfisterLogo from "@assets/generated_images/Pfister_professional_logo_cbbe92e8.png";
 
 export default function ClientLogos() {
   const logos = [
