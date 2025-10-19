@@ -57,10 +57,6 @@ export default function TeamGrid() {
                   </div>
                 )}
               </div>
-              <div className="p-6 text-center">
-                <h3 className="text-lg font-bold text-foreground mb-1 font-[Poppins]">{member.name}</h3>
-                <p className="text-sm text-muted-foreground">/ {member.role}</p>
-              </div>
             </Card>
           ))}
         </div>
