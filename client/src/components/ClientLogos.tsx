@@ -25,11 +25,11 @@ export default function ClientLogos() {
         <div className="relative overflow-hidden">
           <div className="flex gap-20 animate-marquee items-center">
             {[...logos, ...logos, ...logos].map((logo, index) => (
-              <div key={index} className="flex-shrink-0 flex items-center justify-center h-20 min-w-[200px] bg-white rounded-lg px-6 py-3 shadow-sm">
+              <div key={index} className="flex-shrink-0 flex items-center justify-center h-20 min-w-[200px]">
                 <img 
                   src={logo.image} 
                   alt={logo.name} 
-                  className="h-14 w-auto object-contain"
+                  className="h-16 w-auto object-contain"
                 />
               </div>
             ))}
