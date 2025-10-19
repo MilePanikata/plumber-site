@@ -1,11 +1,11 @@
-import kohlerLogo from "@assets/generated_images/Kohler_logo_clean_design_d6d11dbf.png";
-import deltaLogo from "@assets/generated_images/Delta_logo_clean_design_67e1cd2f.png";
-import groheLogo from "@assets/generated_images/Grohe_logo_clean_design_c1e5176e.png";
-import rheemLogo from "@assets/generated_images/Rheem_logo_clean_design_07f81d3f.png";
-import fergusonLogo from "@assets/generated_images/Ferguson_logo_clean_design_760de0bb.png";
-import moenLogo from "@assets/generated_images/Moen_professional_logo_07605519.png";
-import americanStandardLogo from "@assets/generated_images/American_Standard_logo_32f3eef7.png";
-import pfisterLogo from "@assets/generated_images/Pfister_professional_logo_cbbe92e8.png";
+import kohlerLogo from "@assets/generated_images/Kohler_transparent_logo_969fdcd9.png";
+import deltaLogo from "@assets/generated_images/Delta_transparent_logo_7953cfaf.png";
+import groheLogo from "@assets/generated_images/Grohe_transparent_logo_7ffa27ae.png";
+import rheemLogo from "@assets/generated_images/Rheem_transparent_logo_b261ab53.png";
+import fergusonLogo from "@assets/generated_images/Ferguson_transparent_logo_833072e3.png";
+import moenLogo from "@assets/generated_images/Moen_transparent_logo_935046c6.png";
+import americanStandardLogo from "@assets/generated_images/American_Standard_transparent_logo_21dd5a42.png";
+import pfisterLogo from "@assets/generated_images/Pfister_transparent_logo_a6c25e61.png";
 
 export default function ClientLogos() {
   const logos = [
