@@ -37,7 +37,6 @@ export default function TeamGrid() {
               data-testid={`card-team-${index}`}
             >
               <div className="relative aspect-[3/4] overflow-hidden bg-muted">
-                <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
                 {hoveredIndex === index && (
                   <div className="absolute inset-0 bg-navy/80 flex items-center justify-center">
                     <div className="flex flex-col items-center gap-4">
